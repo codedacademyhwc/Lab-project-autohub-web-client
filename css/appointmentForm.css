@@ -1,0 +1,115 @@
+
+
+#auto-service-name{
+    font-size: 24pt; 
+    font-weight: bold;
+    color: black;
+    margin-top: 50px;
+}
+
+.row-container{
+    display: flex;
+    margin-top: -30px;
+}
+
+.label-text{
+    font-size: 16pt; 
+    color: black;
+}
+
+#detail-title{
+    font-size: 18pt; 
+    font-weight: bold;
+    color: black;
+    margin-top: 50px;
+}
+
+.row-input-container{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.text-input{
+    height: 40px;
+    font-size: 16pt;
+    padding-left: 10px;
+}
+
+.row-multi-type-input-container{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: start;
+    justify-items: center;
+}
+
+.registation-bundle, .registation-container, .checkbox-bundle{
+    display: flex;
+    flex-direction: row;
+}
+
+.checkbox-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.checkbox-input {
+    transform: scale(1.5); 
+  }
+
+.text-field-input{
+    font-size: 16pt;
+    width: 100%;
+    padding: 10px;
+}
+
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.order-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+#buy-now-button{
+    background-color: rgb(195, 58, 58);
+    transition: background-color 0.3s ease;
+}
+
+#buy-now-button:hover{
+    background-color: rgb(255, 95, 95);
+    cursor: pointer;
+}
+
+#add-to-cart-button{
+    background-color: #555555;
+    transition: background-color 0.3s ease;
+}
+
+#add-to-cart-button:hover{
+    background-color: #939393;
+    cursor: pointer;
+}
+
+.button-text{
+    font-size: 14pt;
+    font-weight: bold;
+    color: white;
+}

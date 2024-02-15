@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appointment</title>
+
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/appointmentForm.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- left side -->
+    <div class="grid-side-item">
+      <div class="side-box"></div>
+    </div>
+
+    <!-- main body -->
+    <div class="">
+      <!-- Web Header -->
+      <div class="header-item">
+        <div class="header-container">
+          <p id="shop-name">AutoService Hub</p>
+        </div>
+      </div>
+
+      <div class="title-container">
+        <p id="auto-service-name"></p>
+      </div>
+      <div class="row-container">
+        <p class="label-text" id="address-title">ที่อยู่ :</p>
+        <p class="label-text" id="address-text" style="margin-left: 20px"></p>
+      </div>
+
+      <p id="detail-title">รายละเอียด</p>
+
+      <!-- Name - Surname -->
+      <div class="row-input-container">
+        <div class="input-container">
+          <p id="label-text">ชื่อ *</p>
+          <input class="text-input" id="name-input" style="width: 550px" />
+        </div>
+        <div class="input-container">
+          <p id="label-text">นามสกุล *</p>
+          <input class="text-input" id="surname-input" style="width: 550px" />
+        </div>
+      </div>
+
+      <!-- Tel - Email -->
+      <div class="row-input-container">
+        <div class="input-container">
+          <p id="label-text">หมายเลขโทรศัพท์ *</p>
+          <input class="text-input" id="tel-input" style="width: 550px" />
+        </div>
+        <div class="input-container">
+          <p id="label-text">E-mail</p>
+          <input class="text-input" id="email-input" style="width: 550px" />
+        </div>
+      </div>
+
+      <!-- date - time -->
+
+      <div class="row-multi-type-input-container">
+        <div class="input-container">
+          <p id="label-text">วันที่จะเข้ารับบริการ *</p>
+          <input
+            class="text-input"
+            type="date"
+            id="date-input"
+            style="width: 550px"
+          />
+        </div>
+        <div class="input-container" style="margin-left: 70px">
+          <p id="label-text">ช่วงเวลาที่จะเข้ารับบริการ *</p>
+          <div class="checkbox-bundle">
+            <div class="checkbox-group">
+              <input
+                class="checkbox-input"
+                id="morning-check-input"
+                type="checkbox"
+              />
+              <p id="label-text" style="margin-left: 10px">
+                เช้า (7:00 น. - 12:00 น.)
+              </p>
+            </div>
+            <div class="checkbox-group">
+              <input
+                class="checkbox-input"
+                id="afternoon-check-input"
+                type="checkbox"
+              />
+              <p id="label-text" style="margin-left: 10px">
+                บ่าย (13:00 น. - 18:00 น.)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- registration - topic -->
+      <div class="row-multi-type-input-container">
+        <div class="registation-container">
+          <div class="input-container">
+            <p id="label-text">หมวดทะเบียน *</p>
+            <div class="registation-bundle">
+              <input class="text-input" id="regis-gr-input" style="width: 80px" />
+              <div class="input-container">
+                <input
+                  class="text-input"
+                  style="width: 20px; border: none; text-align: center"
+                  value="-"
+                  readonly
+                />
+              </div>
+            </div>
+          </div>
+          <div class="input-container">
+            <p id="label-text">หมายเลขทะเบียน *</p>
+            <input
+              class="text-input"
+              id="regis-num-input"
+              style="width: 120px"
+            />
+          </div>
+          <div class="input-container" style="margin-left: 20px">
+            <p id="label-text">จังหวัด *</p>
+            <input
+              class="text-input"
+              id="regis-province-input"
+              style="width: 265px"
+            />
+          </div>
+        </div>
+
+        <div class="input-container" style="margin-left: 70px">
+          <p id="label-text">ประเภทงานซ่อม *</p>
+          <div class="checkbox-bundle">
+            <div class="checkbox-group">
+              <input
+                class="checkbox-input"
+                id="type1-input"
+                type="checkbox"
+              />
+              <p id="label-text" style="margin-left: 10px">เช็คระยะ</p>
+            </div>
+            <div class="checkbox-group">
+              <input
+                class="checkbox-input"
+                id="type2-input"
+                type="checkbox"
+              />
+              <p id="label-text" style="margin-left: 10px">อื่น ๆ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- other detail -->
+
+      <div class="input-container">
+        <p id="label-text">รายละเอียดอื่นๆ (ถ้ามี)</p>
+        <textarea
+          class="text-field-input"
+          id="detail-message-input"
+          name="message"
+          rows="5"
+          cols="50"
+        ></textarea>
+      </div>
+
+      <div class="button-container">
+        <div class="order-button" id="buy-now-button">
+            <p class="button-text">ลบข้อมูล</p>
+        </div>
+        <div class="order-button" id="add-to-cart-button">
+            <p class="button-text">ทำการนัดหมาย</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- right side -->
+    <div class="grid-item">
+      <div class="side-box"></div>
+    </div>
+    <script src="../js/appointmentForm.js"></script>
+  </body>
+</html>

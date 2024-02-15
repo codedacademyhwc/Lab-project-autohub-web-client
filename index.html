@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoService Hub</title>
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!-- left side -->
+    <div class="grid-side-item">
+        <div class="side-box"></div>
+    </div>
+
+    <!-- main body -->
+    <div class="grid-main-item">
+        <!-- Web Header -->
+        <div class="header-item">
+            <div class="header-container">
+                <p id="shop-name">AutoService Hub</p>
+            </div>
+
+        </div>
+        <!-- Banner -->
+        <div class="banner-container">
+            <img class="banner-img" 
+            src="https://images.unsplash.com/photo-1551522435-a13afa10f103?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+        <!-- New arrival product -->
+        <div class="search-container">
+            <div class="title-container">
+                <p id="search-title">ค้นหาศูนย์บริการในเครือ</p>
+            </div>
+            <div class="search-panal-container">
+                <div class="search-item-container">
+                    <p id="select-item-title">จังหวัด</p>
+                    <select class="input-search" id="select-province">
+                        <option value="0">ทั้งหมด</option>
+                    </select>
+                </div>
+                <div class="search-item-container">
+                    <p id="select-item-title">Keyword</p>
+                    <input class="search-keyword-input" id="keyword-input"/>
+                </div>
+                <div class="search-button-container">
+                    <div class="search-button">
+                        <p id="search-button-text">ค้นหา</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="search-result-container" id="result-main-container">
+                <p id="search-result-title">ผลการค้นหา</p>
+                
+                <!-- Table -->
+                <table id="search-result">
+                    <colgroup>
+                        <col style="width: 5%;">
+                        <col style="width: 30%;">
+                        <col style="width: 35%;">
+                        <col style="width: 10%;">
+                        <col style="width: 10%;">
+                        <col style="width: 10%;">
+                    </colgroup>
+                    <tr>
+                      <th>ลำดับ</th>
+                      <th>ชื่อศูนย์บริการ</th>
+                      <th>ที่อยู่</th>
+                      <th>จังหวัด</th>
+                      <th>โทร</th>
+                      <th></th>
+                    </tr>
+                  </table>
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- right side -->
+    <div class="grid-item">
+        <div class="side-box"></div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
